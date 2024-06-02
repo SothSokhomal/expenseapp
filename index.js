@@ -138,16 +138,12 @@ function displayChart(expenses){
       datasets: [{
         label: 'Amount to USD',
         data: data.map((item) => item.amount),
-        borderWidth: 1
+        borderWidth: 1,
+        width: 300,
+        height: 500
+        
       }]
     },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
   });
 
 
